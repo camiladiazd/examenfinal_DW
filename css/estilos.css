@@ -213,7 +213,33 @@ a:active{
     bottom: 0;
     right: 0;
 }
- 
+
+.form{
+    margin-bottom: 10px;
+}
+
+.usuario{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.usuario:hover {
+    background-color: #f0f8ff;
+}
+
+.boton-eliminar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
 @media(max-width:760px){
     body{
         margin: 0;
