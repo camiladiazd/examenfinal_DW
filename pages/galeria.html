@@ -42,13 +42,42 @@
             </div>
 
             <div class="boxgap">
-            <div class="box">
-                <div class="right">
-                <h2>Galería</h2>
-                <p>Un espacio en donde se recopilan diferentes trabajos universitarios de diseño e ilustración.</p>
-                
+                <div class="box">
+                    <div class="right">
+                    <h2>Mis trabajos recientes</h2>
+                    <p>Un espacio en donde se recopilan diferentes trabajos universitarios de diseño e ilustración.</p>
+                    
+                    <div class="gallery">
+                        <img src="/img/imageng1.png" alt="Imagen 1" onclick="openModal(this.src)">
+                        <img src="/img/imageng2.png" alt="Imagen 2" onclick="openModal(this.src)">
+                        <img src="/img/imageng3.png" alt="Imagen 3" onclick="openModal(this.src)">
+                        <img src="/img/imageng4.png" alt="Imagen 4" onclick="openModal(this.src)">
+                        <img src="/img/imageng5.png" alt="Imagen 5" onclick="openModal(this.src)">
+                        <img src="/img/imageng6.png" alt="Imagen 6" onclick="openModal(this.src)">
+                        <img src="/img/imageng7.png" alt="Imagen 7" onclick="openModal(this.src)">
+                        <img src="/img/imageng8.png" alt="Imagen 8" onclick="openModal(this.src)">
+                        <img src="/img/imageng9.png" alt="Imagen 9" onclick="openModal(this.src)">
+                    </div>
+
+                    <div class="modal" id="modal" onclick="closeModal()">
+                        <img id="modalImage" src="" alt="Imagen Ampliada">
+                    </div>
+
+                    <script>
+                        function openModal(src) {
+                            document.getElementById('modalImage').src = src;
+                            document.getElementById('modal').style.display = 'flex';
+                        }
+
+                        function closeModal() {
+                            document.getElementById('modal').style.display = 'none';
+                        }
+                    </script>
+
+                    <br><br>
+
+                    
                 </div>
-            </div>
             </div>
         </div>
     </main>
