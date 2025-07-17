@@ -7,24 +7,24 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
 <body>
     
     <div class="sidebg">
         <div class="side">
 
-            <img class="avatar" src="img/milamilamila.png">
+            <img class="avatar" src="../img/milamilamila.png" alt="Avatar de Camila">
 
             <p class="desc">Página web creada para el curso de Diseño Web de la carrera de Arte y Diseño Gráfico Empresarial de la UCV. Gracias por visitar :]</p>
 
             <h2 class="sideheaders">Menú</h2>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre mí</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/sobremi.html">Sobre mí</a></li>
+                <li><a href="../pages/galeria.html">Galería</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+                <li><a href="../pages/recursos.html">Recursos</a></li>
             </ul>
             
             <div class="extra1">
@@ -33,31 +33,69 @@
             </div>
         </div>
     </div>
-    <main>
+    <main class="fadein">
 
         <div class="container">
             <div class="headerwrapper">
-            <h1 class="title">Blog</h1>
-            <img class="headerimg" src="img/vine27.gif" id="header">
+            <h1 class="title">Recursos adicionales</h1>
+            <img class="headerimg" src="../img/vine27.gif" id="header">
             </div>
 
             <div class="boxgap">
             <div class="box">
                 <div class="right">
-                <h1>Gestión de usuarios</h1>
+                <h2>Contáctame:</h2>
+                <section class="formulario">
+                    <h3>Formulario de inscripción</h3>
+                    <form action="#" method="post" aria-label="Formulario de solicitud de recursos">
+                        
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana Pérez" aria-label="Nombre completo">
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="Ej. ejemplo@email.com" aria-label="Correo electrónico">
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 987654321" aria-label="Número de teléfono">
+
+                        <label for="fecha">Fecha de solicitud:</label>
+                        <input type="date" id="fecha" name="fecha" required aria-label="Fecha de solicitud">
+
+                        <label>Tipo de recurso:</label>
+                        <input type="radio" id="digital" name="tipo" value="Digital" required>
+                        <label for="digital">Digital</label>
+
+                        <input type="radio" id="impreso" name="tipo" value="Impreso">
+                        <label for="impreso">Impreso</label>
+
+                        <label for="color">Color preferido del material:</label>
+                        <input type="color" id="color" name="color" aria-label="Color preferido">
+
+                        <label for="archivo">Adjuntar archivo (opcional):</label>
+                        <input type="file" id="archivo" name="archivo" aria-label="Subir archivo">
+
+                        <label for="comentarios">Comentarios adicionales:</label>
+                        <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..." aria-label="Comentarios adicionales"></textarea>
+
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </form>
+                    </section>
                     <form id="formulario">
+                        <h3>Registro de usuario</h3>
                         <input type="text" id="nombre" placeholder="Nombre del usuario" required>
                         <input type="text" id="rol" placeholder="Rol del usuario" required>
                         <button type="submit">Agregar Usuario</button>
                     </form>
                     <section id="lista-usuarios"></section>
-                    <script src="script.js"></script>
+                    <script src="../js/script.js"></script>
                 </div>
             </div>
             </div>
         </div>
     </main>
  
-    <div id="credit"><a href="#">Diseñado por Camila Díaz</a></div>
+    <div id="credit"><a href="https://github.com/camiladiazd">Diseñado por Camila Díaz</a></div>
+    <script src="../js/script.js"></script>
 </body>
 </html>
